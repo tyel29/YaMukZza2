@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 
-class LoadingActivity extends Activity {
+public class LoadingActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

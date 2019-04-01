@@ -102,13 +102,19 @@
         android:id="@+id/textView2"
         android:layout_width="327dp"
         android:layout_height="40dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
         android:background="@color/YaMukZza"
+        android:gravity="center"
         android:text="MY PAGE"
         android:textColor="@color/colorW"
         android:textSize="30dp"
-        android:gravity="center"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="103dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -116,25 +122,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="로그인 후\n이용해주세요"
+        android:text="             님\n환영합니다"
         android:textColor="@color/YaMukZza"
         android:textSize="35dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="108dp"
         tools:layout_editor_absoluteY="201dp" />
 
+
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="326dp"
-        android:layout_height="102dp"
-        android:background="@drawable/kakao"
-        android:gravity="center|right"
-        android:text="카카오톡 로그인 "
-        android:textColor="@color/colorKakao"
-        android:textSize="30dp"
+        android:id="@+id/textView6"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="000"
+        android:textColor="@color/YaMukZza"
+        android:textSize="35dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="355dp" />
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="201dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -148,5 +154,29 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="42dp"
         tools:layout_editor_absoluteY="512dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:background="@color/YaMukZza"
+        android:text="로그아웃"
+        android:textColor="@color/colorW"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="341dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:background="@color/YaMukZza"
+        android:text="장바구니 리스트"
+        android:textColor="@color/colorW"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="427dp"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
