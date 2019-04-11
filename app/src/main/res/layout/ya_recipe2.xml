@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--툴바, 추가된 소스-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/YaMukZza"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <Button
+            android:id="@+id/my_toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff656c"
+            android:gravity="center"
+            android:text="야먹자"
+            android:textColor="@color/colorW"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/이름"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="홍길동"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="490dp"
+        android:layout_height="89dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_mypage"
+
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:background="#ff656c"
+            android:text="mypage"
+            android:textColor="@color/colorW"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="666dp" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:background="#ff656c"
+            android:text="search"
+            android:textColor="@color/colorW"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="666dp" />
+
+        <Button
+            android:id="@+id/btn_main"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:background="#ff656c"
+            android:text="main"
+            android:textColor="@color/colorW"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="666dp" />
+
+        <Button
+            android:id="@+id/btn_recipe"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:background="#ff656c"
+            android:text="recipe"
+            android:textColor="@color/colorW"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="247dp"
+            tools:layout_editor_absoluteY="666dp" />
+
+        <Button
+            android:id="@+id/btn_basket"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:background="#ff656c"
+            android:text="basket"
+            android:textColor="@color/colorW"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="329dp"
+            tools:layout_editor_absoluteY="666dp" />
+
+    </LinearLayout>
+
+    <!--Recipe-->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="134dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginRight="117dp"
+        android:background="@color/YaMukZza"
+        android:gravity="center"
+        android:text="에그 인 헬"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/image1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/이름" />
+
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@color/YaMukZza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/이름" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginRight="179dp"
+        android:background="@color/YaMukZza"
+        android:gravity="center"
+        android:text="재료"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/image1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="302dp"
+        android:layout_marginRight="302dp"
+        android:background="@color/YaMukZza"
+        android:gravity="center"
+        android:text="만드는 법"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
